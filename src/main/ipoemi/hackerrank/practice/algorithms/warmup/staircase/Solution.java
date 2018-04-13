@@ -20,9 +20,7 @@ public class Solution {
      * Complete the staircase function below.
      */
     static void staircase(int n) {
-        IntStream.range(0, n).forEach(i -> {
-            System.out.println(String.format("%" + n + "s", repeat("#", i + 1)));
-        });
+        IntStream.range(0, n).forEach(i -> System.out.println(String.format("%" + n + "s", repeat("#", i + 1))));
     }
 
     private static final Scanner scan = new Scanner(System.in);

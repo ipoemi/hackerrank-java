@@ -19,9 +19,9 @@ public class Solution {
         long[] sums = IntStream.range(0, arr.length).mapToLong(i -> exclusiveSum(arr, i)).sorted().toArray();
         long max = 0;
         long min = 0;
-        for (int i = 0; i < sums.length; i++) {
-            if (sums[i] > max) max = sums[i];
-            if (sums[i] < min || min == 0) min = sums[i];
+        for (long sum : sums) {
+            if (sum > max) max = sum;
+            if (sum < min || min == 0) min = sum;
         }
         System.out.println(String.format("%d %d", min, max));
     }

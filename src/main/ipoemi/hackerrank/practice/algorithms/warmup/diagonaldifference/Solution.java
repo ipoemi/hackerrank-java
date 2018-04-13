@@ -10,7 +10,7 @@ public class Solution {
 
     static int diagonal(int[] start, int[] dxdy, int[][] mat) {
         int ret = 0;
-        for (int i = 0; i < mat.length; i++) {
+        for (int[] aMat : mat) {
             ret += mat[start[0]][start[1]];
             start[0] += dxdy[0];
             start[1] += dxdy[1];

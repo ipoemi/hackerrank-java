@@ -1,4 +1,4 @@
-package ipoemi.hackerrank.practice.algorithms.warmup.minimaxsum;
+package ipoemi.hackerrank.practice.algorithms.implementation.appleandorange;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -23,13 +23,15 @@ class SolutionTest {
     }
 
     @Test
-    void miniMaxSum() {
+    void countApplesAndOranges() {
         List<String> expect = new LinkedList<>();
-        expect.add("10 14");
+        expect.add("1");
+        expect.add("1");
 
-        Solution.miniMaxSum(new int[]{1, 2, 3, 4, 5});
+        Solution.countApplesAndOranges(7, 11, 5, 15, new int[]{-2, 2, 1}, new int[]{5, -6});
         Scanner scanner = new Scanner(outContent.toString());
         List<String> actual = new LinkedList<>();
+        actual.add(scanner.nextLine());
         actual.add(scanner.nextLine());
 
         assertLinesMatch(expect, actual);

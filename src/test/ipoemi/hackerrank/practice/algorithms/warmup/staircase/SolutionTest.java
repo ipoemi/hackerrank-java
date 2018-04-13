@@ -24,7 +24,7 @@ class SolutionTest {
 
     @Test
     void staircase() {
-        List<String> expect = new LinkedList();
+        List<String> expect = new LinkedList<>();
         expect.add("     #");
         expect.add("    ##");
         expect.add("   ###");
@@ -34,7 +34,7 @@ class SolutionTest {
 
         Solution.staircase(6);
         Scanner scanner = new Scanner(outContent.toString());
-        List<String> actual = new LinkedList();
+        List<String> actual = new LinkedList<>();
         IntStream.range(0, 6).forEach(i -> actual.add(scanner.nextLine()));
 
         assertLinesMatch(expect, actual);
