@@ -1,7 +1,5 @@
 package ipoemi.hackerrank.practice.algorithms.implementation.designer_pdf_viewer;
 
-import com.sun.tools.javac.util.ArrayUtils;
-
 import java.io.*;
 import java.math.*;
 import java.security.*;
